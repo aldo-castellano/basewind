@@ -1,0 +1,17 @@
+/* src/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos personalizados */
+button {
+  @apply px-4 py-2 rounded-md font-medium text-white bg-primary hover:bg-info active:bg-secondary focus:outline-none;
+}
+
+input[type="radio"] {
+  @apply w-4 h-4 border-2 rounded-full border-gray-300 bg-white transition-all;
+}
+
+input[type="radio"]:checked {
+  @apply bg-red-500 border-red-500;
+}
