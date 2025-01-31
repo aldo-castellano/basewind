@@ -1,26 +1,27 @@
 {
   "name": "basewind",
-  "version": "1.0.0",
-  "description": "Librería de estilos basada en Tailwind CSS",
+  "version": "1.0.25",
+  "description": "Librería de estilos basada en CSS puro.",
   "main": "dist/styles.css",
+  "style": "dist/styles.css",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/global.css -o ./dist/styles.css --minify",
+    "build": "postcss ./src/global.css -o ./dist/styles.css --minify",
     "prepare": "npm run build"
   },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "postcss-cli": "^11.0.0"
+  },
   "keywords": [
-    "tailwind",
     "css",
     "styles",
     "library"
   ],
   "author": "Tu Nombre",
   "license": "MIT",
+  "type": "module",
   "dependencies": {
-    "tailwindcss": "^3.3.0"
-  },
-  "devDependencies": {
-    "postcss": "^8.4.0",
-    "autoprefixer": "^10.4.0",
-    "@types/node": "^18.0.0"
+    "postcss-import": "^16.1.0"
   }
 }

@@ -1,0 +1,9 @@
+:root {
+  --primary-color: #4f46e5; /* Azul principal */
+  --primary-color-hover: #4338ca;
+  --secondary-color: #f3f4f6; /* Gris claro */
+  --secondary-color-hover: #e5e7eb;
+  --text-color: #ffffff;
+  --border-radius: 6px;
+  --transition-speed: 0.2s; /* Velocidad estándar para animaciones */
+}
