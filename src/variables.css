@@ -1,9 +1,12 @@
 :root {
-  --primary-color: #4f46e5; /* Azul principal */
-  --primary-color-hover: #4338ca;
-  --secondary-color: #f3f4f6; /* Gris claro */
-  --secondary-color-hover: #e5e7eb;
+  --primary-btn-color: #4f46e5;
+  --primary-btn-color-hover: #4338ca;
+  --secondary-btn-color: #f3f4f6;
+  --secondary-btn-color-hover: #e5e7eb;
   --text-color: #ffffff;
-  --border-radius: 6px;
-  --transition-speed: 0.2s; /* Velocidad estándar para animaciones */
+  --border-radius-btn: 6px;
+  --border-radius-input: 6px;
+  --transition-speed: 0.2s;
+  --primary-input-color: #4f46e5;
+  --primary-input-background: #f9fafb;
 }

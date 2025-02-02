@@ -8,7 +8,7 @@
   padding: 10px 16px; /* Tamaño más equilibrado */
   font-size: 14px; /* Texto cómodo */
   font-weight: 600;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-btn);
   border: none;
   cursor: pointer;
   transition: background-color var(--transition-speed),
@@ -16,11 +16,11 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
 }
 .btn-primary {
-  background-color: var(--primary-color);
+  background-color: var(--primary-btn-color);
   color: var(--text-color);
 }
 .btn-primary:hover {
-  background-color: var(--primary-color-hover);
+  background-color: var(--primary-btn-color-hover);
 
   transform: scale(1.02); /* Animación sutil al pasar el ratón */
 
@@ -30,11 +30,11 @@
   transform: scale(0.98); /* Feedback inmediato al hacer clic */
 }
 .btn-secondary {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-btn-color);
   color: #111827;
 }
 .btn-secondary:hover {
-  background-color: var(--secondary-color-hover);
+  background-color: var(--secondary-btn-color-hover);
   transform: scale(1.02);
 }
 .btn-secondary:active {
@@ -47,13 +47,13 @@
   padding: 8px 12px;
   font-size: 14px;
   border: 1px solid #d1d5db;
-  border-radius: var(--border-radius);
-  background-color: #f9fafb;
+  border-radius: var(--border-radius-input);
+  background-color: var(--primary-input-background);
   transition: border-color var(--transition-speed),
     box-shadow var(--transition-speed);
 }
 .input:focus {
-  border-color: var(--primary-color);
+  border-color: var(--primary-input-color);
   box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.3);
   outline: none;
 }
@@ -64,14 +64,14 @@
   padding: 8px 12px;
   font-size: 14px;
   border: 1px solid #d1d5db;
-  border-radius: var(--border-radius);
-  background-color: #f9fafb;
+  border-radius: var(--border-radius-input);
+  background-color: var(--primary-input-background);
   resize: vertical;
   transition: border-color var(--transition-speed),
     box-shadow var(--transition-speed);
 }
 .textarea:focus {
-  border-color: var(--primary-color);
+  border-color: var(--primary-input-color);
   box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.3);
   outline: none;
 }
@@ -89,9 +89,9 @@
   appearance: none;
   width: 16px;
   height: 16px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--primary-input-color);
   border-radius: 50%;
-  background-color: #ffffff;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -99,17 +99,14 @@
   transition: background-color var(--transition-speed),
     border-color var(--transition-speed);
 }
-.radio:checked {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-}
+
 .radio:checked::after {
   position: absolute;
   content: "";
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: var(--text-color);
+  background-color: var(--primary-input-color);
 }
 
 /* Checkboxes */
@@ -121,7 +118,7 @@
   appearance: none;
   width: 16px;
   height: 16px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--primary-input-color);
   border-radius: 4px;
   background-color: #ffffff;
   display: inline-flex;
@@ -133,8 +130,8 @@
     border-color var(--transition-speed);
 }
 .checkbox:checked {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
+  background-color: var(--primary-input-color);
+  border-color: var(--primary-input-color);
 }
 .checkbox:checked::after {
   position: absolute;
@@ -182,7 +179,7 @@
   border-radius: 50%;
 }
 input:checked.switch:after {
-  background-color: var(--primary-color);
+  background-color: var(--primary-input-color);
 }
 input:checked.switch:before {
   transform: translateX(16px);
