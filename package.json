@@ -1,6 +1,6 @@
 {
   "name": "basewind",
-  "version": "1.0.25",
+  "version": "1.0.27",
   "description": "Librería de estilos basada en CSS puro.",
   "main": "dist/styles.css",
   "style": "dist/styles.css",
